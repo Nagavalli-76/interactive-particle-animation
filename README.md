@@ -8,25 +8,45 @@ This project creates smooth animated particles with interactive mouse effects, r
 
 ## 🚀 Live Demo
 
-🔗 https://your-netlify-link.netlify.app
+🔗 https://interactive-particle-animation.netlify.app/
 
 ---
 
 ## 📌 Overview
 
-The **Interactive Particle Animation** project demonstrates how HTML5 Canvas and JavaScript can be used to create beautiful real-time animations directly in the browser.
+The **Interactive Particle Animation** website is a modern animated background experience built using HTML5 Canvas, CSS, and JavaScript. 
+The project creates hundreds of smoothly moving particles that dynamically interact with each other and respond to user cursor movement in real time.
 
-The particles move dynamically across the screen, interact with the cursor, and connect with nearby particles to create a futuristic animated background effect.
+The website features a dark futuristic theme with glowing particle effects and animated connection lines that create a visually immersive experience. 
+Particles move with controlled speed and direction, while nearby particles automatically connect with thin animated lines to form a responsive network effect.
 
-This project is lightweight, responsive, and beginner-friendly while still showcasing advanced frontend animation concepts.
+Mouse interaction adds an extra level of engagement by attracting or repelling particles based on cursor movement, making the animation feel alive and interactive.
 
----
+The project is fully responsive and optimized for smooth performance across different screen sizes and devices. The animation speed, particle density, connection distance, and visual appearance are carefully balanced to provide both aesthetic visuals and efficient rendering performance.
+
+This project demonstrates practical usage of:
+
+- HTML5 Canvas rendering
+- Real-time animation systems
+- Particle physics simulation
+- Interactive mouse events
+- Dynamic connection algorithms
+- Responsive frontend design
+- Smooth animation optimization using requestAnimationFrame()
+
+The website can be used as:
+- Animated landing page background
+- Portfolio homepage effect
+- Modern web design inspiration
+- Frontend animation showcase
+- Creative JavaScript learning project
 
 # 🖼️ Project Preview
 
 ## Desktop View
 
-![Preview](assets/preview.png)
+![Preview]<img width="1919" height="868" alt="preview" src="https://github.com/user-attachments/assets/2478109e-8433-41c2-81a0-d9c4e562ca09" />
+
 
 ---
 
