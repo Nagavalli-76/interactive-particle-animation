@@ -202,14 +202,6 @@ Possible future upgrades:
 
 ---
 
-# 📸 Screenshots
-
-## Main Animation
-
-![Animation Screenshot](assets/preview.png)
-
----
-
 # 📊 Performance
 
 - Optimized rendering loop
