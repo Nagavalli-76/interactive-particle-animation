@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Particle Animation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Figtree:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<canvas id="c"></canvas>
+
+<div class="ui-overlay">
+
+  <div class="title-block">
+    <h1>Particle <span>Field</span></h1>
+    <p>Interactive Canvas · Move your mouse</p>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-val" id="statParticles">120</span>
+      <span class="stat-label">Particles</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-val" id="statLines">0</span>
+      <span class="stat-label">Connections</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-val" id="statFps">60</span>
+      <span class="stat-label">FPS</span>
+    </div>
+  </div>
+
+  <div class="color-badge">
+    Theme: <span id="colorLabel">Cyan</span>
+  </div>
+
+  <p class="mouse-hint" id="mouseHint">
+    Move mouse to attract · Click to repel · Right-click to explode
+  </p>
+
+  <div class="controls">
+
+    <!-- Play/Pause -->
+    <button class="ctrl-btn active" id="btnPlay" title="Play / Pause">
+      <svg viewBox="0 0 16 16" id="playIcon">
+        <rect x="3" y="2" width="3.5" height="12" rx="1"/>
+        <rect x="9.5" y="2" width="3.5" height="12" rx="1"/>
+      </svg>
+      Pause
+    </button>
+
+    <div class="ctrl-divider"></div>
+
+    <!-- Mouse mode -->
+    <button class="ctrl-btn active" id="btnAttract" title="Attract mode">
+      <svg viewBox="0 0 16 16">
+        <circle cx="8" cy="8" r="3"/>
+      </svg>
+      Attract
+    </button>
+
+    <button class="ctrl-btn" id="btnRepel" title="Repel mode">
+      <svg viewBox="0 0 16 16">
+        <path d="M8 8l-5-5M8 8l5-5M8 8l-5 5M8 8l5 5"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        fill="none"/>
+      </svg>
+      Repel
+    </button>
+
+    <div class="ctrl-divider"></div>
+
+    <!-- Speed -->
+    <div class="ctrl-slider-wrap">
+      <label>Speed</label>
+      <input type="range" id="speedSlider"
+      min="0.2" max="3" step="0.1" value="1" />
+    </div>
+
+    <!-- Count -->
+    <div class="ctrl-slider-wrap">
+      <label>Count</label>
+      <input type="range" id="countSlider"
+      min="40" max="300" step="10" value="120" />
+    </div>
+
+    <!-- Connection distance -->
+    <div class="ctrl-slider-wrap">
+      <label>Connect</label>
+      <input type="range" id="distSlider"
+      min="60" max="250" step="10" value="140" />
+    </div>
+
+    <div class="ctrl-divider"></div>
+
+    <!-- Color theme -->
+    <button class="ctrl-btn" id="btnColor" title="Change color theme">
+      Theme
+    </button>
+
+    <!-- Lines toggle -->
+    <button class="ctrl-btn active" id="btnLines" title="Toggle connecting lines">
+      Lines
+    </button>
+
+    <!-- Reset -->
+    <button class="ctrl-btn" id="btnReset" title="Reset">
+      Reset
+    </button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
